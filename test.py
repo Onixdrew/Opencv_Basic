@@ -125,11 +125,16 @@ imagen2 = cv2.imread("./img/zorro.jpg")  # Escala de grises el 2do argumento es 
 
 
 # Dibujar texto en la imagen ////////////////////////////////////////
-blanco = np.ones((500, 500, 3), dtype="uint8") * 255 #blanco
+# blanco = np.ones((500, 500, 3), dtype="uint8") * 255 #blanco
 
-new_picture=cv2.putText(imagen2, "Genial", (100,100), cv2.FONT_HERSHEY_TRIPLEX, 3, (0, 255, 0), 2)
+# new_picture=cv2.putText(imagen2, "Genial", (100,100), cv2.FONT_HERSHEY_TRIPLEX, 3, (0, 255, 0), 2)
 
-cv2.imshow("Imagen en blanco",new_picture )
+# cv2.imshow("Imagen en blanco",new_picture )
 
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
+
+
+
+
+
