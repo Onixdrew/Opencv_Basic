@@ -138,3 +138,17 @@ imagen2 = cv2.imread("./img/zorro.jpg")  # Escala de grises el 2do argumento es 
 
 
 
+
+# //////////////////////////////////////////////////////////
+# Enmascarado
+
+import cv2
+
+img = cv2.imread('./img/girasol.webp')
+hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+mask = cv2.inRange(hsv, (52,0,0), (65,255,255))
+
+cv2.imshow("Mascara", mask)
+cv2.imshow("Imagen", img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
